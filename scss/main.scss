@@ -1,0 +1,243 @@
+// Variables
+$dark-bg: #1f1b24; // #1c1c28; // #17223b; // #373737;
+$white: #ffffff;
+$grey: #aaaaaa;
+$link-color: #ffb650; // #ef6848; // #ff9c51;
+$dark-header: #121212; // #28293d; // #263859; // #161f28; // #2d2d2d;3
+
+body {
+  background-color: $dark-bg !important;
+}
+
+#divHeader {
+  + div {
+    text-align: center !important;
+
+    #lblCompanyName {
+      color: $link-color !important;
+      font-weight: bold;
+      text-decoration: underline;
+
+      opacity: 1;
+      -webkit-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+
+      &:hover,
+      &:active,
+      &:focus {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+#lblFullName {
+  color: $white !important;
+  margin-bottom: 15px !important;
+}
+
+#divShowClock {
+  margin-top: -515px !important;
+
+  span {
+    color: $white;
+  }
+}
+
+.input-lg {
+  border-radius: 0px;
+}
+
+#lblRememberPassword {
+  color: $grey;
+  text-transform: capitalize;
+
+  + a {
+    text-transform: capitalize;
+    color: $link-color;
+    text-decoration: underline;
+    margin-left: 50px !important;
+
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+}
+
+#lnkFullScreen {
+  text-transform: capitalize;
+  color: $link-color;
+  text-decoration: underline;
+
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.btn-lg {
+  border-radius: 0px;
+
+  &#btnLogin {
+    text-transform: uppercase;
+  }
+}
+
+#lblCurrentTime {
+  + div {
+    + div {
+      + div {
+        + div {
+          background-color: transparent !important;
+
+          span {
+            color: $grey;
+            // display: block;
+            // margin: 0px !important;
+
+            &#lblGps {
+              display: block;
+              margin-top: 40px !important;
+            }
+
+            &#lblIp,
+            &#lblClockId {
+              display: inline-block;
+            }
+
+            &#lblShowCompanyName {
+              margin-left: 5px !important;
+
+              + span {
+                display: block;
+
+                a {
+                  color: $link-color;
+                  text-decoration: underline;
+                  text-transform: capitalize;
+                  display: inline-block;
+                  margin-top: 10px;
+
+                  opacity: 1;
+                  -webkit-transition: opacity 0.3s ease;
+                  transition: opacity 0.3s ease;
+
+                  &:hover,
+                  &:active,
+                  &:focus {
+                    opacity: 0.7;
+                  }
+                }
+              }
+            }
+          }
+
+          #lnkForgot {
+            color: $link-color;
+            text-decoration: underline;
+            text-transform: capitalize;
+            display: inline-block;
+            margin-left: 5px !important;
+
+            opacity: 1;
+            -webkit-transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease;
+
+            &:hover,
+            &:active,
+            &:focus {
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#lnkCreateNewCompany {
+  margin-top: 20px;
+  text-transform: capitalize;
+  display: inline-block;
+  color: $link-color !important;
+  text-decoration: underline;
+  margin-left: 0px !important;
+
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+// Header
+
+#divHeader {
+  background-color: transparent !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0px !important;
+
+  #divHeadTitle {
+    background-color: $dark-header;
+    padding: 5px;
+    margin-bottom: 30px;
+
+    a {
+      text-transform: capitalize;
+      display: inline-block;
+      color: $link-color !important;
+      text-decoration: underline;
+
+      opacity: 1;
+      -webkit-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+
+      &:hover,
+      &:active,
+      &:focus {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+#divFooter {
+  background-color: $dark-header !important;
+  border: none !important;
+  padding: 5px;
+
+  #divFoodTitle {
+    a {
+      text-transform: capitalize;
+      display: inline-block;
+      color: $link-color !important;
+      text-decoration: underline;
+
+      opacity: 1;
+      -webkit-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+
+      &:hover,
+      &:active,
+      &:focus {
+        opacity: 0.7;
+      }
+    }
+  }
+}
